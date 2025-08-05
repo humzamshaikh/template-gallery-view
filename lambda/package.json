@@ -1,0 +1,22 @@
+{
+  "name": "template-gallery-email-sender",
+  "version": "1.0.0",
+  "description": "AWS Lambda function for sending emails via SES from Template Gallery",
+  "main": "send-email.js",
+  "scripts": {
+    "zip": "zip -r function.zip . -x '*.git*' 'node_modules/.cache/*'"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sesv2": "^3.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "aws",
+    "lambda",
+    "ses",
+    "email",
+    "template"
+  ],
+  "author": "Humza Shaikh",
+  "license": "MIT"
+} 

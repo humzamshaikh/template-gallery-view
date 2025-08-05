@@ -8,6 +8,7 @@ A React component that displays a gallery of email templates with preview functi
 - **Template Cards**: Each card shows a thumbnail, template name, description, and preview button
 - **Live Preview**: Click "Preview" to see the actual React component rendered below the gallery
 - **Text Editing**: Edit template content directly in the preview with a sidebar editor
+- **Email Sending**: Send edited templates via Amazon SES with a simple form
 - **Smooth Scrolling**: Automatically scrolls to the preview when selected
 - **Use Template**: "Use this template" button logs the component name to console
 - **Responsive Design**: Built with Tailwind CSS for mobile-friendly layout
@@ -75,7 +76,13 @@ src/
    - Real-time preview updates
    - State management for all editable content
 
-4. **Use Template**: When "Use this template" is clicked:
+4. **Email Sending**: The `EmailSender` component provides:
+   - Form to enter recipient email address
+   - Send button that calls AWS Lambda via API Gateway
+   - Real-time feedback on email sending status
+   - Preview of template content being sent
+
+5. **Use Template**: When "Use this template" is clicked:
    - Template name and component name are logged to console
    - An alert confirms the selection
 
@@ -93,6 +100,9 @@ To add new templates:
 - Tailwind CSS
 - Vite (build tool)
 - Unsplash (for placeholder images)
+- Amazon SES (email sending)
+- AWS Lambda (backend processing)
+- API Gateway (REST API)
 
 ## Available Scripts
 
