@@ -1,0 +1,25 @@
+{
+  "name": "template-gallery-dev-server",
+  "version": "1.0.0",
+  "description": "Development server for Template Gallery email functionality",
+  "main": "dev-server.js",
+  "scripts": {
+    "start": "node dev-server.js",
+    "dev": "nodemon dev-server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "email",
+    "template",
+    "development",
+    "server"
+  ],
+  "author": "Humza Shaikh",
+  "license": "MIT"
+} 

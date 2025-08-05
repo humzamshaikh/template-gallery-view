@@ -39,7 +39,14 @@ npm install
 npm run dev
 ```
 
-3. Open your browser and navigate to `http://localhost:5173`
+3. (Optional) Start the development email server for testing email functionality:
+```bash
+cd server
+npm install
+npm start
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
 
 ## Project Structure
 

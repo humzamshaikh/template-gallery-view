@@ -84,7 +84,7 @@ const EditableTemplate = ({ template: TemplateComponent, initialContent = {} }) 
 
         {/* Editing Sidebar */}
         <div className="w-80 bg-gray-50 p-6 rounded-lg h-fit sticky top-4">
-        <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center justify-between mb-6">
           <h3 className="text-lg font-semibold text-gray-800">Edit Content</h3>
           <button
             onClick={() => setIsEditing(!isEditing)}
@@ -198,8 +198,8 @@ const EditableTemplate = ({ template: TemplateComponent, initialContent = {} }) 
             <p className="text-xs mt-2">You can also click directly on text elements in the template to edit them.</p>
           </div>
         )}
+          </div>
         </div>
-      </div>
 
       {/* Email Sender */}
       <EmailSender 
