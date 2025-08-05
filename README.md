@@ -7,6 +7,7 @@ A React component that displays a gallery of email templates with preview functi
 - **Template Gallery Grid**: Displays email templates in a responsive grid layout
 - **Template Cards**: Each card shows a thumbnail, template name, description, and preview button
 - **Live Preview**: Click "Preview" to see the actual React component rendered below the gallery
+- **Text Editing**: Edit template content directly in the preview with a sidebar editor
 - **Smooth Scrolling**: Automatically scrolls to the preview when selected
 - **Use Template**: "Use this template" button logs the component name to console
 - **Responsive Design**: Built with Tailwind CSS for mobile-friendly layout
@@ -14,9 +15,9 @@ A React component that displays a gallery of email templates with preview functi
 ## Templates Included
 
 1. **Welcome Template** - For welcoming new users
-2. **Newsletter Template** - Weekly newsletter with highlights
-3. **Promotional Template** - Sales and promotional campaigns
-4. **Notification Template** - Important updates and system notifications
+2. **Event Coming Soon** - Announce upcoming events and build excitement
+3. **Event Registration Confirmation** - Confirm event registrations with all details
+4. **Year-End Receipt** - Annual summary and performance reports
 
 ## Getting Started
 
@@ -65,10 +66,16 @@ src/
 
 2. **Preview Functionality**: When a user clicks "Preview":
    - The selected template is stored in state
-   - The component renders below the gallery
+   - The component renders below the gallery with editing capabilities
    - The page smoothly scrolls to the preview
 
-3. **Use Template**: When "Use this template" is clicked:
+3. **Text Editing**: The `EditableTemplate` component provides:
+   - Sidebar editor with form fields for common content
+   - Click-to-edit functionality on text elements
+   - Real-time preview updates
+   - State management for all editable content
+
+4. **Use Template**: When "Use this template" is clicked:
    - Template name and component name are logged to console
    - An alert confirms the selection
 

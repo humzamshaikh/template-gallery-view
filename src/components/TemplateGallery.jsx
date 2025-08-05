@@ -1,8 +1,9 @@
 import React, { useState, useRef } from 'react'
 import WelcomeTemplate from './templates/WelcomeTemplate'
-import NewsletterTemplate from './templates/NewsletterTemplate'
-import PromotionalTemplate from './templates/PromotionalTemplate'
-import NotificationTemplate from './templates/NotificationTemplate'
+import EventComingSoonTemplate from './templates/EventComingSoonTemplate'
+import EventRegistrationTemplate from './templates/EventRegistrationTemplate'
+import YearEndReceiptTemplate from './templates/YearEndReceiptTemplate'
+import EditableTemplate from './EditableTemplate'
 
 const TemplateGallery = () => {
   const [selectedTemplate, setSelectedTemplate] = useState(null)
@@ -19,24 +20,24 @@ const TemplateGallery = () => {
     },
     {
       id: 2,
-      name: "Newsletter Template",
-      component: NewsletterTemplate,
-      thumbnail: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop&crop=center",
-      description: "Weekly newsletter with highlights and updates"
+      name: "Event Coming Soon",
+      component: EventComingSoonTemplate,
+      thumbnail: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=300&fit=crop&crop=center",
+      description: "Announce upcoming events and build excitement"
     },
     {
       id: 3,
-      name: "Promotional Template",
-      component: PromotionalTemplate,
-      thumbnail: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center",
-      description: "Sales and promotional campaigns with special offers"
+      name: "Event Registration Confirmation",
+      component: EventRegistrationTemplate,
+      thumbnail: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop&crop=center",
+      description: "Confirm event registrations with all details"
     },
     {
       id: 4,
-      name: "Notification Template",
-      component: NotificationTemplate,
-      thumbnail: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=300&fit=crop&crop=center",
-      description: "Important updates and system notifications"
+      name: "Year-End Receipt",
+      component: YearEndReceiptTemplate,
+      thumbnail: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop&crop=center",
+      description: "Annual summary and performance reports"
     }
   ]
 
@@ -123,7 +124,7 @@ const TemplateGallery = () => {
             
             {/* Template Preview */}
             <div className="bg-gray-100 p-8 rounded-lg">
-              <SelectedTemplateComponent />
+              <EditableTemplate template={SelectedTemplateComponent} />
             </div>
           </div>
         </div>
