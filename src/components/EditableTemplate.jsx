@@ -2,7 +2,15 @@ import React, { useState } from 'react'
 import EmailSender from './EmailSender'
 
 const EditableTemplate = ({ template: TemplateComponent, initialContent = {} }) => {
-  const [content, setContent] = useState(initialContent)
+  // Initialize content with default template values
+  const [content, setContent] = useState({
+    mainTitle: initialContent.mainTitle || 'Welcome!',
+    subtitle: initialContent.subtitle || 'We\'re excited to have you on board',
+    mainHeading: initialContent.mainHeading || 'Hello there! 👋',
+    description: initialContent.description || 'Welcome to our platform! We\'re thrilled to have you join our community. You\'re now part of something special, and we can\'t wait to see what you\'ll accomplish.',
+    buttonText: initialContent.buttonText || 'Get Started',
+    footerText: initialContent.footerText || '© 2024 Your Company. All rights reserved.'
+  })
   const [isEditing, setIsEditing] = useState(false)
 
   const handleContentChange = (key, value) => {

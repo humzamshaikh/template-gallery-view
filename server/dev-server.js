@@ -25,6 +25,13 @@ app.post('/send-email', async (req, res) => {
     console.log('📧 To:', recipientEmail);
     console.log('📧 From: humza.shaikh2006@gmail.com');
     console.log('📧 Subject:', templateContent.mainTitle || templateName);
+    console.log('📧 Content Preview:');
+    console.log('  - Title:', templateContent.mainTitle);
+    console.log('  - Subtitle:', templateContent.subtitle);
+    console.log('  - Heading:', templateContent.mainHeading);
+    console.log('  - Description:', templateContent.description?.substring(0, 100) + '...');
+    console.log('  - Button:', templateContent.buttonText);
+    console.log('  - Footer:', templateContent.footerText);
     
     res.json({
       message: 'Email sent successfully (development mode)',

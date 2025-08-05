@@ -124,8 +124,11 @@ const EmailSender = ({ templateContent, templateName }) => {
         <div className="text-sm text-blue-700 space-y-1">
           <div><strong>Template:</strong> {templateName}</div>
           <div><strong>Title:</strong> {templateContent?.mainTitle || 'Not set'}</div>
+          <div><strong>Subtitle:</strong> {templateContent?.subtitle || 'Not set'}</div>
           <div><strong>Heading:</strong> {templateContent?.mainHeading || 'Not set'}</div>
           <div><strong>Description:</strong> {templateContent?.description ? `${templateContent.description.substring(0, 50)}...` : 'Not set'}</div>
+          <div><strong>Button:</strong> {templateContent?.buttonText || 'Not set'}</div>
+          <div><strong>Footer:</strong> {templateContent?.footerText || 'Not set'}</div>
         </div>
       </div>
     </div>
