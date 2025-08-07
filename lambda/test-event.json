@@ -1,0 +1,4 @@
+{
+  "body": "{\"recipientEmail\":\"test@example.com\",\"templateName\":\"Test Template\",\"templateContent\":{\"mainTitle\":\"Test Email\",\"description\":\"This is a test email.\"}}",
+  "httpMethod": "POST"
+} 

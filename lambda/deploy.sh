@@ -29,7 +29,7 @@ echo "🔧 Creating Lambda function..."
 aws lambda create-function \
   --function-name $FUNCTION_NAME \
   --runtime nodejs18.x \
-  --role arn:aws:iam::$(aws sts get-caller-identity --query Account --output text):role/template-gallery-email-sender-role \
+  --role arn:aws:iam::$(aws sts get-caller-identity --query Account --output text):role/template-gallery-lambda-role \
   --handler send-email.handler \
   --zip-file fileb://function.zip \
   --timeout 30 \

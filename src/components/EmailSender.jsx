@@ -25,7 +25,7 @@ const EmailSender = ({ templateContent, templateName }) => {
     setMessage('')
 
     try {
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('https://r0dlyp5slg.execute-api.us-west-1.amazonaws.com/prod/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
